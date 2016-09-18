@@ -6,7 +6,7 @@ def ourrename(tagString,file):
     if tagString in file:
         return
     basedir = tagString + "/"
-    taggedFiles = os.rename(basedir + file, basedir + file + " " + tagString)
+    taggedFiles = os.rename(basedir + file, basedir + tagString +" "  + file)
 
 class Tagging():
     def __init__(self,tagString):
